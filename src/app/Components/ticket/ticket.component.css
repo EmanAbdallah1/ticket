@@ -1,0 +1,191 @@
+/* Ticket Styles */
+.ticket {
+  margin-top: 15px;
+  border: 0.81px solid #EBEBEB;
+  box-shadow: 0px 2px 6px #EBEBEB;
+  background-color: #8a74f9!important;
+  font-family: "Neo Sans Arabic", sans-serif!important;
+  background: url(../../../assets/images/Maskgroup.png);
+  color: white;
+  position: relative;
+  border-radius: 12px;
+}
+
+/* Ticket Label Styles */
+.ticket label {
+  text-align: center!important;
+  color: white;
+  margin-right: 12%;
+}
+
+/* Ticket Header Styles */
+.ticket-header {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.ticket .ticket-header span {
+  cursor: default;
+  position: relative;
+  float: left;
+  margin-left: 18px;
+}
+
+.ticket-header span {
+  cursor: default;
+  position: relative;
+}
+
+.ticket-header span:hover {
+  color: #292b2c;
+}
+
+.ticket-header span:hover::before {
+  position: absolute;
+  content: attr(data-title);
+  background-color: #000;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  bottom: -23px;
+  right: 50%;
+  transform: translate(50%, 50%);
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  width: 70px;
+  height: 25px;
+  font-size: 14px;
+}
+
+.ticket-header span:hover::after {
+  position: absolute;
+  content: '\25B2';
+  height: 1.25rem;
+  color: black;
+  bottom: -2px;
+  left: 47%;
+  transform: scale(1, 1) translate(-33%, 50%) rotate(360deg);    position: absolute;
+  content: '\25B2';
+  height: 1.25rem;
+  color: black;
+  bottom: -2px;
+  left: 47%;
+  transform: scale(1, 1) translate(-33%, 50%) rotate(360deg);
+}
+
+/* Ticket Link Styles */
+.ticket-link {
+  border: 0.83px solid #DDDDDD;
+  width: 226px;
+  line-height: 100%;
+  border-radius: 8px;
+  border-width: 0.8px;
+  display: block;
+  background: #FFFFFF;
+  color: black;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 13px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif!important;
+}
+
+.ticket-link p {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Date Ticket Styles */
+.date-ticket {
+  border-bottom: 2.49px dashed #FFFFFF66;
+  padding-bottom: 15px;
+  padding-top: 7px;
+  font-size: 14px;
+}
+
+/* Percent Styles */
+.percent {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Discount Styles */
+.discount {
+  font-weight: 400px!important;
+  font-size: 15px;
+}
+
+/* Share Ticket Styles */
+.share-ticket {
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  background: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+/* Circle Styles */
+.circle-left, .circle-right {
+  padding: 20px;
+  border-radius: 50%;
+  background: #f3f5f7;
+  display: block;
+  width: fit-content;
+  position: absolute;
+  top: 47%;
+}
+
+.circle-left {
+  left: -24px;
+}
+
+.circle-right {
+  right: -24px;
+}
+
+/* Ticket Bottom Styles */
+.ticket-bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*****responsisive*****/
+@media (max-width: 500px) {
+  .ticket[_ngcontent-ng-c3461380661] label[_ngcontent-ng-c3461380661] {
+    text-align: center!important;
+    color: white;
+    margin-right: 5%;
+  }
+
+  }
+  @media (max-width: 400px) {
+  .share-ticket[_ngcontent-ng-c3574309137] {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: white;
+    margin-right: 0;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .ticket-link {
+    border: 0.83px solid #DDDDDD;
+    width: auto;}
+}

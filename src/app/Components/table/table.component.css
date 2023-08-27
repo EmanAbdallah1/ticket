@@ -1,0 +1,365 @@
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-input {
+  padding-right: 30px; /* Leave space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+}
+.switch-container {
+  display: inline-block;
+  position: relative;
+}
+
+.switch-label {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #8A74F9;  }
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.ticket-sales-header{
+  justify-content: space-between;
+}
+.ticket-slaes{
+  margin-top:30px;
+  font-family: "Neo Sans Arabic", sans-serif!important;
+margin-bottom: 30px;
+
+}
+.ticket-sales-label{
+
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 15px;
+
+}
+.search-input{
+  border: 1px solid #92A1AD66;
+  background: #FFFFFF;
+width: 277px;
+height: 36px;
+}
+.search-input::placeholder {
+  color: #92A1AD66; /* Your desired color */
+}
+.btn1{
+  width: 36px;
+height: 36px;
+
+border-radius: 7.5px;
+border-width: 0.75px;
+border: 0.75px solid #92A1AD66;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+.btn2{
+  width: 36px;
+height: 36px;
+
+border-radius: 7.5px;
+border-width: 0.75px;
+border: 0.75px solid #92A1AD66;
+
+
+}
+.switch-label{
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+color: #9C9D9F;
+
+
+}
+.book{
+  width: 100px;
+  height: 35px;
+  padding: 13px 10px 13px 10px;
+  border-radius: 6px;
+  gap: 8px;
+  background: #8A74F9;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  line-height: 3px;
+  font-size: 12px;
+
+}
+th{
+  font-family: Neo Sans Arabic;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: right;
+color:#ABAAB1;
+
+
+}
+thead{
+  background: #E3E4E9;
+}
+thead.table-header-bg {
+  background-color: gray !important;
+}   
+td label{
+font-size: 12px;
+font-weight: 400;
+
+text-align: right;
+
+}
+td span{
+font-size: 10px;
+font-weight: 400;
+
+text-align: right;
+color: #92A1AD;
+
+}
+td{
+font-size: 13px;
+font-weight: 400;
+
+text-align: right;
+
+}
+td button{
+  background: none;
+  border: none;
+}
+.tic{
+  background: #f4f2ff;
+  padding: 4px;
+  margin-left: 5px;
+  border-radius: 4px;
+
+}
+.dropdown-toggle{
+  width: Fill (52.5px);
+height: Fixed (31.5px);
+padding: 6px 11.25px 6px 11.25px;
+border-radius: 6px;
+border: 0.75px;
+gap: 6px;
+border:1px solid #DDDDDD;
+background: none;
+margin-left: 5px ;
+margin-right: 5px ;
+
+}
+.disabled>.page-link, .page-link.disabled{
+  border: none;
+  background: none;
+  color: gainsboro;
+}
+.page-item:not(:first-child) .page-link{
+  border: none;
+}
+.active{
+  width: 27px;
+height: 27px;
+text-align: center;
+padding: 6.75px 0px 6.25px 0px;
+border-radius: 4.5px;
+background: #8A74F9;
+line-height: 15px;
+color: white!important;
+}
+.page-link{
+  color: #7E8299;
+}
+.table-ticket{
+border: 0.81px solid #EBEBEB;
+box-shadow: 0px 2px 6px #EBEBEB;
+}
+.page-link{
+font-family: 'Inter';
+font-size: 13px;
+font-weight: 600;
+line-height: 14px;
+text-align: center;
+
+}
+.tooltip-text {
+position: relative;
+display: inline-block;
+}
+
+.tooltip-text::before {
+content: attr(data-title);
+position: absolute;
+top: -25px;
+left: 0;
+background-color: #333;
+color: #fff;
+padding: 5px;
+border-radius: 3px;
+white-space: nowrap;
+visibility: hidden;
+opacity: 0;
+transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip-text:hover::before {
+visibility: visible;
+opacity: 1;
+}
+.table thead tr.table-header-bg th {
+background-color: #f6f6f7; /* Your desired background color */
+}
+td{
+vertical-align: middle;
+
+}
+td[_ngcontent-ng-c3999219740] span[_ngcontent-ng-c3999219740]{
+font-size: 13px;
+  font-weight: 400;
+  text-align: right;
+  color: black;
+  
+}
+.table-ticket > div > div > div.table-responsive > table > tbody > tr > td.cinema > span{
+  color: black;
+  font-size: 13px;
+}
+.table-ticket > div > div > div.table-responsive > table > tbody > tr > td.cinema > span > span{
+  color: black;
+  font-size: 13px;
+}
+/******responsive****/
+@media (max-width: 350px) {
+.search-input[_ngcontent-ng-c2060207532] {
+  width: 213px!important;
+  height: 36px;
+  /* margin-bottom: 10px; */
+}
+.btn1[_ngcontent-ng-c2060207532], .btn2[_ngcontent-ng-c2060207532] {
+
+  margin-top: 10px;
+}
+}
+@media (max-width: 400px) {
+.btn1, .btn2 {
+  width: 36px;
+  height: 36px;
+  border-radius: 7.5px;
+  border-width: 0.75px;
+  border: 0.75px solid #92a1ad66;
+  margin: 0 3px;
+}
+.ticket-sales-label[_ngcontent-ng-c2060207532] {
+
+  margin-bottom: 10px;
+}
+.pagination {
+  padding: 0 !important;
+  justify-content: center;
+  margin-top: 15px;
+  margin: auto;
+  margin-top: 10px;
+}
+}
+@media (max-width: 600px) {
+  .pagination {
+    padding: 0 !important;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .table-ticket
+    > div
+    > div
+    > div.d-flex.justify-content-between.flex-wrap
+    > div {
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  td label, td span, td {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    width: 11rem!important;
+}
+thead {
+ width: 11rem!important;
+}
+#splineChart{
+height: 400px!important;
+}
+.search-input {
+
+  width: 188px!important;
+  height: 36px;
+}
+.ticket-sales-header-left{
+  margin-top: 10px;
+}
+
+}
+@media (max-width: 900px) {
+  td label, td span, td {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    width: 11rem!important;
+}
+thead {
+ width: 11rem!important;
+}
+}

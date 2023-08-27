@@ -1,0 +1,109 @@
+<div class="ticket-slaes mt-3">
+    <div class="ticket-sales-header d-flex justify-contnent-between flex-wrap">
+        <div class="ticket-sales-header-righr d-flex align-items-center flex-wrap">
+            <label class="ticket-sales-label">مبيعات التذاكر</label>
+            <div class="search-container">
+                <span class="search-icon"> <img src="../../../assets/images/search-normal.png" /></span>
+                <input type="text" class="search-input" placeholder="بحث عن ...">
+            </div>
+            <button class="btn1"> <img src="../../../assets/images/Group 1000009748.png" /></button>
+            <button class="btn2"> <img src="../../../assets/images/Group 1000009749.png" /></button>
+        </div>
+        <div class="ticket-sales-header-left d-flex align-items-center flex-wrap">
+
+            <div class="switch-container d-flex align-items-center">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span class="switch-label">مفعلة</span>
+
+            </div>
+            <button class="book">حجز تذكرة جديدة</button>
+        </div>
+
+    </div>
+    <div class="card  mt-3 table-ticket">
+        <div class="card-body">
+            <div class="">
+                <div class="table-responsive">
+                    <table class="table table-header-margin">
+                      <thead>
+                        <tr class="table-header-bg">
+                          <th>#</th>
+                          <th>المستخدم</th>
+                          <th>رقم التذكرة<img src="../../../assets/images/arrow-3.png" class="mx-2" /></th>
+                          <th>قيمى التذكرة</th>
+                          <th>السينمات</th>
+                          <th>عدد الأشخاص</th>
+                          <th>عدد مرات الشراء</th>
+                          <th>التذكرة</th>
+                        </tr>
+                      </thead>
+                      <tbody style="margin-top: 20px;">
+                        <tr *ngFor="let client of clients">
+                          <td style="font-family: 'Inter', sans-serif!important;">{{ client.id }}</td>
+                          <td class="d-flex flex-wrap">
+                            <img src="{{ client.imageUrl }}" alt="{{ client.name }}" />
+                            <div class="mx-2 d-flex flex-column">
+                              <label>{{ client.name }}</label><span>{{ client.tel }}</span>
+                            </div>
+                          </td>
+                          <td style="font-family: 'Inter', sans-serif!important;">{{ client.ticketNo }}</td>
+                          <td style="font-family: 'Inter', sans-serif!important;">{{ client.price }}</td>
+                          <td class="cinema">
+                              <span *ngIf="client.cinema.length > 50" class="tooltip-text" [attr.data-title]="client.cinema">
+                                {{ client.cinema | slice:0:50 }}<span *ngIf="client.cinema.length > 50">...</span>
+                              </span>
+                              <span *ngIf="client.cinema.length <= 50">{{ client.cinema }}</span>
+                            </td>
+                          <td style="font-family: 'Inter', sans-serif!important;">{{ client.personNo }}</td>
+                          <td>{{ client.sellNo }}</td>
+                          <td style="width: 14rem;">
+                            <img class="tic" src="{{ client.img }}" alt="{{ client.img }}" />
+                            {{ client.ticketname }}
+                            <button class="mx-4"><img src="../../../assets/images/download.png" /></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  
+                <!-- Pagination -->
+                <div class="d-flex justify-content-between flex-wrap" style="font-size:12.5px">
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0">عرض</p>
+                        <div class="dropdown align-items-center">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                20
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <p class="mb-0">من اصل 250</p>
+                    </div>
+                    <ul class="pagination align-items-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <i
+                                    class="fas fa-chevron-right"></i></a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"> <i class="fas fa-chevron-left" style="color: gray;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

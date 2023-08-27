@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.cdnfonts.com/css/neo-sans-arabic");
+.custom-container {
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+body{
+    direction: rtl;
+    background: #f3f5f7!important;
+  }
